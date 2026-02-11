@@ -106,6 +106,13 @@ Includes:
 
 
 
+## Interactive Dashboard (Databricks)
+
+- The dashboard is available in an interactive Databricks published view.  
+- Access requires workspace login; an interactive walkthrough link can be shared **on request**.
+
+
+
 ## Dashboard Export
 
 ### PDF (recommended)
