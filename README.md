@@ -2,7 +2,7 @@
 
 Databricks SQL lakehouse project analyzing **revenue concentration**, **fulfillment delays**, and **review impact** with an interactive **2-page dashboard**.
 
----
+
 
 ## Overview
 
@@ -13,7 +13,7 @@ This project uses the **Olist Brazilian E-Commerce Public Dataset** to build an 
 - Write SQL for KPI + operational insights
 - Build a **2-page interactive Databricks Dashboard** with a global **Purchase Date Range** filter
 
----
+
 
 ## Tech Stack
 
@@ -22,14 +22,14 @@ This project uses the **Olist Brazilian E-Commerce Public Dataset** to build an 
 - **Databricks Dashboards** (parameter-driven filtering)
 - **SQL modeling** (curated analytics layer)
 
----
+
 
 ## Dataset
 
 **Olist Brazilian E-Commerce Public Dataset (Kaggle)**  
 https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce/data
 
----
+
 
 ## Data Layers (simple & portfolio-friendly)
 
@@ -42,7 +42,7 @@ Key curated object:
 - `workspace.olist_curated.analytics_orders_with_date`  
   Adds a clean `purchase_date` column (DATE) for dashboard filtering and analysis.
 
----
+
 
 ## Dashboard
 
@@ -51,7 +51,7 @@ Key curated object:
   A date-range parameter applied across all dashboard datasets using:
   `purchase_date BETWEEN :p_date.min AND :p_date.max`
 
----
+
 
 ## Page 1 — Overview: Revenue & Delivery Experience
 
@@ -63,7 +63,7 @@ Includes:
 - Top Categories by Revenue
 - Avg Review Score by Delivery Delay Bucket
 
----
+
 
 ## Page 2 — Operations & Geography: Fulfillment Hotspots
 
@@ -76,7 +76,7 @@ Includes:
 - Delivery Delay Distribution (% of items)
 - Avg Review Score in Top Revenue States
 
----
+
 
 ## Key Insights (from the dashboard)
 
@@ -95,7 +95,7 @@ Includes:
 5. **Specific seller→customer routes are operational hotspots.**  
    Certain routes combine higher late-delivery rates with meaningful volume, increasing **Estimated Late Orders**.
 
----
+
 
 ## Recommendations
 
@@ -104,7 +104,7 @@ Includes:
 - Protect top-revenue regions (like SP) with tighter delivery SLAs and fulfillment improvements
 - Monitor delay buckets over time since they directly correlate with review score
 
----
+
 
 ## Dashboard Export
 
@@ -117,7 +117,7 @@ Includes:
 
 > Note: The JSON export may include workspace-specific references (e.g., warehouse/dataset IDs). It’s included as an importable artifact for Databricks environments.
 
----
+
 
 ## Dashboard Screenshots
 
@@ -128,7 +128,7 @@ Includes:
 ![Page 2 (Top)](images/page2_fulfillment_hotspots.png)  
 ![Page 2 (Bottom)](images/page2_fulfillment_hotspots_2.png)
 
----
+
 
 ## Reproducibility (SQL Scripts)
 
@@ -145,7 +145,7 @@ Recommended run order:
 3. **Dashboard datasets (Page 2)**  
    - `sql/03_dashboard_page2_datasets.sql`
 
----
+
 
 ## Repository Structure
 
